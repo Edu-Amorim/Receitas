@@ -1,0 +1,74 @@
+body {
+    background-image: url("https://i.pinimg.com/originals/0c/43/15/0c4315f0d65723472475a9147a5b7592.jpg");
+    background-size: cover;
+    font-family: Nunito;
+
+    margin: 80px 150px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+
+    
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #4E342E;
+}
+h2 {
+    font-weight: 700;
+    font-size: 23px;
+    font-style: italic;
+    color: darkslategrey;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 50px 0;
+}
+
+.dizeres {
+    display: inline-block;
+
+    margin-right: 20px;
+    margin-bottom: 110px;
+}
+
+.foto-perfil {
+    display: inline-block;
+
+    margin: auto 30px;
+
+    border-radius: 100%;
+    width: 185px;
+}
+
+.outras-receitas {
+    text-align: center;
+}
+
+.outras-receitas p, a {
+    font-size: 18px;
+    padding: 16px;
+    color: #5D4037;
+}
+
+.outras-receitas a:hover {
+    color: #BCAAA4;
+    background-color: #5D4037;
+    border-radius: 8px;
+}
+
+.links-midias-sociais img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+
+    align-items: center;
+}
