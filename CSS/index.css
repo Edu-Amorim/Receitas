@@ -5,7 +5,8 @@ body {
     text-align: center;
     border: 2px solid #5D4037;
     border-radius: 18px;
-    margin: 80px 350px;
+    /* margin: 80px 350px; */
+    box-sizing: border-box;
 }
 
 header {
@@ -16,21 +17,45 @@ header {
 
 
 main {
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-main a {
-    font-size: 18px;
-    padding: 16px;
-    margin: 100px;
-    color: #5D4037;
-    text-decoration: none;
-}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
 
-main a:hover {
-    color: #BCAAA4;
+    width: 20%;
+    height: 250px;
+}
+.card:hover {
     background-color: #5D4037;
     border-radius: 8px;
+}
+
+.card a {
+    font-size: 18px;
+    padding: 16px;
+    /* margin: 100px; */
+    color: #b47866;
+    text-decoration: none;
+}
+.card a:hover{
+    color: #BCAAA4;
+}
+.card img{
+    width: 100px;
+    padding-top: 5px;
+    border-radius: 30px;
 }
 
 h1 {
