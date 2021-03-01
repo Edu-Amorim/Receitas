@@ -1,71 +1,79 @@
-body {
+/* Mobile first */
+
+body{
     background-image: url("https://i.pinimg.com/originals/0c/43/15/0c4315f0d65723472475a9147a5b7592.jpg");
     background-size: cover;
+    
     font-family: Nunito;
-    text-align: center;
-    border: 2px solid #5D4037;
-    border-radius: 18px;
-    /* margin: 80px 350px; */
     box-sizing: border-box;
-}
-
-header {
-    padding: 50px;
-    margin: 60px;
-    margin-top: 30px;
+    text-align: center;
+    max-width: 100%;
 }
 
 
-main {
+main{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 100%;
 }
-
 .card{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 10px;
-
-    width: 20%;
-    height: 250px;
+    border: 1px solid #b47866;
+    border-radius: 0.5em;
+    margin-bottom: .5em;
 }
-.card:hover {
-    background-color: #5D4037;
-    border-radius: 8px;
+.card img{
+    max-width: 60%;
+    border-radius: 100%;
 }
-
-.card a {
-    font-size: 18px;
-    padding: 16px;
-    /* margin: 100px; */
+a{
     color: #b47866;
     text-decoration: none;
 }
-.card a:hover{
-    color: #BCAAA4;
-}
-.card img{
-    width: 100px;
-    padding-top: 5px;
-    border-radius: 30px;
-}
 
-h1 {
-    padding: 20px;
-}
-strong {
-    font-size: 35px;
-}
 
-p {
-    font-size: 20px;
-}
 
+
+
+
+
+
+
+@media only screen and (min-width: 420px) {
+
+    body{
+        padding: 3em;
+        margin: 5em;
+        border: 1px solid #5D4037;
+        border-radius: 8px;
+    }
+
+    header{
+        margin: 1em;
+        margin-bottom: 10em;
+    }
+    main{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1em;
+    }
+
+    .card{
+        border: none;
+        width: 20%;
+    }
+    .card:hover {
+        background-color: #5D4037;
+        border-radius: 1em;
+    }
+    a:hover{
+        color: #BCAAA4;
+        background-color: #5D4037;
+        border-radius: 1em;
+    }
+}
