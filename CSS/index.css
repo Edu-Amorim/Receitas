@@ -30,6 +30,17 @@ main{
     max-width: 60%;
     border-radius: 100%;
 }
+/* .image{
+    background-image: url("https://i0.statig.com.br/bancodeimagens/eg/um/fe/egumfe3na1jras7sxh7lqxc58.jpg");
+    overflow: unset;
+    width: 95px;
+    height: 95px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin: auto;
+} */
+
 a{
     color: #b47866;
     text-decoration: none;
@@ -43,7 +54,7 @@ a{
 
 
 
-@media only screen and (min-width: 420px) {
+@media only screen and (min-width: 500px) {
 
     body{
         padding: 3em;
@@ -66,6 +77,11 @@ a{
     .card{
         border: none;
         width: 20%;
+        min-width: 9em;
+        flex-wrap: wrap;
+    }
+    .card img{
+        overflow: hidden;
     }
     .card:hover {
         background-color: #5D4037;
